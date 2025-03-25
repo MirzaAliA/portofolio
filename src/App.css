@@ -229,7 +229,7 @@ div.about-me-left p {
   opacity: 70%;
 }
 
-div.skill-grid {
+ul.skill-grid {
   padding: 1rem 0 0 0;
   width: 100%;
   display: flex;
@@ -237,7 +237,7 @@ div.skill-grid {
   gap: 1rem;
 }
 
-div.about-me-right div.skill {
+div.about-me-right li.skill {
   border-radius: 0.3rem;
   padding: 0.8rem 1rem 0.8rem 1rem;
   justify-content: center;
@@ -275,7 +275,7 @@ div.about-me-right div.skill {
     flex-direction: row;
   }
 
-  div.skill-grid {
+  ul.skill-grid {
     padding: 2vh 0 0 0;
   }
 }
@@ -310,7 +310,7 @@ div.about-me-right div.skill {
     flex-direction: row;
   }
 
-  div.skill-grid {
+  ul.skill-grid {
     padding: 2vh 0 0 0;
   }
 }
@@ -341,7 +341,7 @@ div.about-me-right div.skill {
     padding: 8vh 6vw 4vh 4vw;
   }
 
-  div.skill-grid {
+  ul.skill-grid {
     padding: 2vh 0 0 0;
   }
 }
