@@ -58,7 +58,7 @@ function Navbar() {
   return (
     <nav className="navbar" id="navbar">
       <div className="logo">
-        <img src="/public/logo-mirza.png" alt="" />
+        <img src="/logo-mirza.png" alt="" />
       </div>
       <div className="menu-icon" onClick={() => { setMenuIcon(!menuIcon) }}>
         <List size={32} />
@@ -95,7 +95,7 @@ function Header() {
             <p className="hero-desc">A full-stack web developer who embarks on an endless journey of learning and growth, forging his path toward greatness.</p>
           </div>
           <div className="hero-right">
-            <img src="/public/hero.svg" alt="" />
+            <img src="/hero.svg" alt="" />
           </div>
         </section>
       </div>
@@ -147,17 +147,17 @@ function Portofolio() {
       </div>
       <div className="portofolio-main-container">
         <div className="portofolio-grid-item">
-          <img className="image-portofolio" src="/public/vite.svg" alt="" />
+          <img className="image-portofolio" src="/vite.svg" alt="" />
           <h2>Cerpenku.id</h2>
           <p>Restful API Development for cerpen posts with following system</p>
         </div>
         <div className="portofolio-grid-item">
-          <img className="image-portofolio" src="/public/vite.svg" alt="" />
+          <img className="image-portofolio" src="/vite.svg" alt="" />
           <h2>Simple E-Commerce</h2>
           <p>E-commerce platform with shopping cart functionality</p>
         </div>
         <div className="portofolio-grid-item">
-          <img className="image-portofolio" src="/public/logo-fix.png" alt="" />
+          <img className="image-portofolio" src="/logo-fix.png" alt="" />
           <h2>Lawas-TJ</h2>
           <p>Web-based Early Warning System application for landslide in Tinjomoyo</p>
         </div>
