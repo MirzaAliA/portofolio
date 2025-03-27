@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import { List, InstagramLogo, LinkedinLogo, WhatsappLogo, GithubLogo } from "@phosphor-icons/react"
+import { List, InstagramLogo, LinkedinLogo, WhatsappLogo, GithubLogo, ArrowFatUp, ArrowFatLineUp } from "@phosphor-icons/react"
 import './App.css'
+import { useEffect } from 'react';
 
 const listSkills = [
   {
@@ -42,6 +43,7 @@ export default function App() {
   return (
     <>
       <Navbar />
+      <BackToTopButton />
       <Header />
       <AboutMe skills={skills} />
       <Portofolio />
@@ -234,6 +236,30 @@ function Footer() {
         </div>
       </div>
     </footer>
+  )
+}
+
+function BackToTopButton() {
+
+  const [isScrollY, setIsScrollY] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 500) {
+        setIsScrollY(true)
+      } else {
+        setIsScrollY(false)
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
+
+  return (
+    <a className={isScrollY ? "backtotopactive" : "backtotop"} href="#navbar">
+      <ArrowFatLineUp size={32} />
+    </a>
   )
 }
 

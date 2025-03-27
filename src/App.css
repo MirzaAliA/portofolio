@@ -649,3 +649,27 @@ footer a {
     padding: 2vh 6vw 4vh 4vw;
   }
 }
+
+/* back to top button */
+
+a.backtotop {
+  display: none;
+}
+
+a.backtotopactive {
+  position: fixed;
+  background-color: rgb(235, 152, 0);
+  bottom: 1.2rem;
+  right: 1.2rem;
+  padding: 0.8rem 0.8rem 0.5rem 0.8rem;
+  border: none;
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 4px 4px 10px 1px;
+  transition: 0.3s;
+}
+
+a.backtotopactive:hover {
+  background-color: rgb(173, 113, 0);
+}
+
+
