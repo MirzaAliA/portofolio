@@ -60,7 +60,9 @@ function Navbar() {
   return (
     <nav className="navbar" id="navbar">
       <div className="logo">
-        <img src="/logo-mirza.png" alt="" />
+        <a href="#navbar">
+          <img src="/logo-mirza.png" alt="" />
+        </a>
       </div>
       <div className="menu-icon" onClick={() => { setMenuIcon(!menuIcon) }}>
         <List size={32} />
