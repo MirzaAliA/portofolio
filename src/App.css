@@ -366,6 +366,7 @@ h1.portofolio-title {
 }
 
 img.image-portofolio {
+  border-radius: 50%;
   width: 6rem;
   height: auto;
 }

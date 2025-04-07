@@ -149,12 +149,12 @@ function Portofolio() {
       </div>
       <div className="portofolio-main-container">
         <div className="portofolio-grid-item">
-          <img className="image-portofolio" src="/vite.svg" alt="" />
+          <img className="image-portofolio" src="/cerpenku.png" alt="" />
           <h2>Cerpenku.id</h2>
           <p>Restful API Development for cerpen posts with following system</p>
         </div>
         <div className="portofolio-grid-item">
-          <img className="image-portofolio" src="/vite.svg" alt="" />
+          <img className="image-portofolio" src="/ecommerce.png" alt="" />
           <h2>Simple E-Commerce</h2>
           <p>E-commerce platform with shopping cart functionality</p>
         </div>
