@@ -151,7 +151,7 @@ function Portofolio() {
       </div>
       <div className="portofolio-main-container">
         <div className="portofolio-grid-item">
-          <a href="https://portfolio-simple-e-commerce.vercel.app/">
+          <a href="https://github.com/MirzaAliA/cerpenku_id">
             <img className="image-portofolio" src="/cerpenku.png" alt="" />
             <h2>Cerpenku.id</h2>
             <p>Restful API Development for cerpen posts with following system</p>
@@ -165,7 +165,7 @@ function Portofolio() {
           </a>
         </div>
         <div className="portofolio-grid-item">
-          <a href="https://portfolio-simple-e-commerce.vercel.app/">
+          <a href="https://github.com/MirzaAliA/ews_tanah_longsor">
             <img className="image-portofolio" src="/logo-fix.png" alt="" />
             <h2>Lawas-TJ</h2>
             <p>Web-based Early Warning System application for landslide in Tinjomoyo</p>
