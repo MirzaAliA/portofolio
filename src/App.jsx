@@ -150,27 +150,27 @@ function Portofolio() {
         <h1 className="section-title portofolio-title">My Case Study</h1>
       </div>
       <div className="portofolio-main-container">
-        <div className="portofolio-grid-item">
-          <a href="https://github.com/MirzaAliA/cerpenku_id">
+      <a href="https://github.com/MirzaAliA/cerpenku_id">
+      <div className="portofolio-grid-item">
             <img className="image-portofolio" src="/cerpenku.png" alt="" />
             <h2>Cerpenku.id</h2>
             <p>Restful API Development for cerpen posts with following system</p>
-          </a>
         </div>
+      </a>
+        <a href="https://portfolio-simple-e-commerce.vercel.app/">
         <div className="portofolio-grid-item">
-          <a href="https://portfolio-simple-e-commerce.vercel.app/">
             <img className="image-portofolio" src="/ecommerce.png" alt="" />
             <h2>Simple E-Commerce</h2>
             <p>E-commerce platform</p>
-          </a>
         </div>
+        </a>
+        <a href="https://github.com/MirzaAliA/ews_tanah_longsor">
         <div className="portofolio-grid-item">
-          <a href="https://github.com/MirzaAliA/ews_tanah_longsor">
             <img className="image-portofolio" src="/logo-fix.png" alt="" />
             <h2>Lawas-TJ</h2>
             <p>Web-based Early Warning System application for landslide in Tinjomoyo</p>
-          </a>
         </div>
+        </a>
       </div>
     </section>
   )
