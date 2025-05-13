@@ -2,6 +2,13 @@ import { useState } from 'react'
 import { List, InstagramLogo, LinkedinLogo, WhatsappLogo, GithubLogo, ArrowFatUp, ArrowFatLineUp } from "@phosphor-icons/react"
 import './App.css'
 import { useEffect } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 const listSkills = [
   {
@@ -15,6 +22,9 @@ const listSkills = [
   },
   {
     skill: "JavaScript"
+  },
+  {
+    skill: "TypeScript"
   },
   {
     skill: "ReactJs"
@@ -58,9 +68,9 @@ function Navbar() {
   const [menuIcon, setMenuIcon] = useState(false);
 
   return (
-    <nav className="navbar" id="navbar">
+    <nav className="navbar fixed-top" id="navbar">
       <div className="logo">
-        <a href="#navbar">
+        <a href="#header">
           <img src="/logo-mirza.png" alt="" />
         </a>
       </div>
@@ -69,7 +79,7 @@ function Navbar() {
       </div>
       <ul className={menuIcon ? "" : "hidden"}>
         <li>
-          <a href="#navbar">Home</a>
+          <a href="#header">Home</a>
         </li>
         <li>
           <a href="#about-me">About Me</a>
@@ -150,27 +160,75 @@ function Portofolio() {
         <h1 className="section-title portofolio-title">My Case Study</h1>
       </div>
       <div className="portofolio-main-container">
-      <a href="https://github.com/MirzaAliA/cerpenku_id">
-      <div className="portofolio-grid-item">
-            <img className="image-portofolio" src="/cerpenku.png" alt="" />
-            <h2>Cerpenku.id</h2>
-            <p>Restful API Development for cerpen posts with following system</p>
-        </div>
-      </a>
-        <a href="https://portfolio-simple-e-commerce.vercel.app/">
-        <div className="portofolio-grid-item">
-            <img className="image-portofolio" src="/ecommerce.png" alt="" />
-            <h2>Simple E-Commerce</h2>
-            <p>E-commerce platform</p>
-        </div>
-        </a>
-        <a href="https://github.com/MirzaAliA/ews_tanah_longsor">
-        <div className="portofolio-grid-item">
-            <img className="image-portofolio" src="/logo-fix.png" alt="" />
-            <h2>Lawas-TJ</h2>
-            <p>Web-based Early Warning System application for landslide in Tinjomoyo</p>
-        </div>
-        </a>
+        <Swiper
+          modules={[Pagination]}
+          pagination={{ clickable: true }}
+          className="swiper-review"
+          slidesPerGroup={1}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 30
+            },
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 30
+            },
+            540: {
+              slidesPerView: 1.5,
+              spaceBetween: 30
+            },
+            680: {
+              slidesPerView: 2,
+              spaceBetween: 40
+            },
+            900: {
+              slidesPerView: 2.5,
+              spaceBetween: 40
+            },
+            1150: {
+              slidesPerView: 3,
+              spaceBetween: 40
+            },
+          }}
+        >
+          <SwiperSlide>
+            <a href="https://saverentalsemarang.vercel.app/">
+              <div className="portofolio-grid-item">
+                <img className="image-portofolio" src="/SaveRental.png" alt="" />
+                <h2>Save Rental Semarang</h2>
+                <p>Website branding for Save Rental Motor Semarang</p>
+              </div>
+            </a>
+          </SwiperSlide>
+          <SwiperSlide>
+            <a href="https://portfolio-simple-e-commerce.vercel.app/">
+              <div className="portofolio-grid-item">
+                <img className="image-portofolio" src="/ecommerce.png" alt="" />
+                <h2>Simple E-Commerce</h2>
+                <p>E-commerce platform</p>
+              </div>
+            </a>
+          </SwiperSlide>
+          <SwiperSlide>
+            <a href="https://github.com/MirzaAliA/cerpenku_id">
+              <div className="portofolio-grid-item">
+                <img className="image-portofolio" src="/cerpenku.png" alt="" />
+                <h2>Cerpenku.id</h2>
+                <p>Restful API Development for cerpen posts with following system</p>
+              </div>
+            </a>
+          </SwiperSlide>
+          <SwiperSlide>
+            <a href="https://github.com/MirzaAliA/ews_tanah_longsor">
+              <div className="portofolio-grid-item">
+                <img className="image-portofolio" src="/logo-fix.png" alt="" />
+                <h2>Lawas-TJ</h2>
+                <p>Web-based Early Warning System application for landslide in Tinjomoyo</p>
+              </div>
+            </a>
+          </SwiperSlide>
+        </Swiper>
       </div>
     </section>
   )
@@ -265,7 +323,7 @@ function BackToTopButton() {
   });
 
   return (
-    <a className={isScrollY ? "backtotopactive" : "backtotop"} href="#navbar">
+    <a className={isScrollY ? "backtotopactive" : "backtotop"} href="#header">
       <ArrowFatLineUp size={32} />
     </a>
   )

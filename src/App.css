@@ -4,15 +4,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
 }
 
 
@@ -20,6 +16,12 @@ body {
 nav {
   padding: 1rem 2rem;
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
   justify-content: space-between;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   overflow: hidden;
@@ -81,6 +83,10 @@ nav ul li a :hover {
 
 /* header */
 
+.hero-right-sm img {
+    display: none;
+  }
+
 div.main-container {
   width: 1200px;
   margin: 0 auto;
@@ -131,7 +137,8 @@ div.container {
 
 @media only screen and (max-width: 650px) {
   .hero-right img {
-    display: none;
+    width: 60vw;
+    height: auto;
   }
 
   div.hero-left {
@@ -142,11 +149,19 @@ div.container {
     padding: 5vh 0;
     display: grid;
     grid-template-columns: 1fr;
+    margin: 0px 0px 60px 0px;
   }
 
   div.main-container {
     padding: 0;
     width: 100vw;
+  }
+
+  section.hero {
+    padding: 10vh 0 0 0;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: column-reverse;
   }
 }
 
@@ -155,6 +170,7 @@ div.container {
     width: 60vw;
     height: auto;
   }
+
   div.hero-left {
     padding: 4vh 6vw 4vh 4vw;
   }
@@ -177,6 +193,7 @@ div.container {
     width: 60vw;
     height: auto;
   }
+
   div.hero-left {
     padding: 4vh 6vw 4vh 4vw;
   }
@@ -239,6 +256,7 @@ ul.skill-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  text-decoration: none;
 }
 
 div.about-me-right li.skill {
@@ -246,6 +264,7 @@ div.about-me-right li.skill {
   padding: 0.8rem 1rem 0.8rem 1rem;
   justify-content: center;
   text-align: center;
+  list-style: none;
   background-color: rgba(218, 217, 217, 0.6);
 }
 
@@ -263,6 +282,22 @@ div.about-me-right li.skill {
 
   div.about-me-left p {
     padding: 1vh 0 0 0;
+  }
+
+  div.about-me-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  div.about-me-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
 
   h3.about-me-title {
@@ -376,10 +411,7 @@ img.image-portofolio {
 }
 
 div.portofolio-main-container {
-  display: grid;
-  gap: 3rem;
   padding: 0 8rem 0 8rem;
-  grid-template-columns: repeat(3, 1fr);
 }
 
 div.portofolio-grid-item {
@@ -388,12 +420,10 @@ div.portofolio-grid-item {
   background-color: #f7f7f7;
   text-align: center;
   color: black;
+  width: auto;
   height: 320px;
 }
 
-div.portofolio-grid-item {
-  width: 100%;
-}
 
 @media only screen and (max-width: 650px) {
   section.portofolio {
@@ -401,12 +431,16 @@ div.portofolio-grid-item {
   }
 
   div.portofolio-main-container {
-    display: flex;
-    gap: 2rem;
     padding: 6vh 4vw 4vh 4vw;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+  }
+
+  div.portofolio-title {
+    text-align: center;
+    padding: 0.2rem 0 0rem 0;
+  }
+
+  h1.portofolio-title {
+    padding: 0.2rem 0 0rem 0;
   }
 }
 
@@ -416,12 +450,7 @@ div.portofolio-grid-item {
   }
 
   div.portofolio-main-container {
-    display: flex;
-    gap: 2rem;
     padding: 6vh 4vw 4vh 4vw;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
   }
 }
 
@@ -432,8 +461,6 @@ div.portofolio-grid-item {
 
   div.portofolio-main-container {
     padding: 6vh 4vw 4vh 4vw;
-    gap: 1rem;
-    justify-content: center;
   }
 }
 
@@ -598,6 +625,7 @@ footer a {
   footer.site-footer {
     padding: 0;
   }
+
   div.footer-container-top {
     display: flex;
     flex-wrap: wrap;
@@ -605,6 +633,7 @@ footer a {
     gap: 2vh;
     padding: 2vh 6vw 4vh 4vw;
   }
+
   div.footer-container-bottom {
     display: flex;
     flex-wrap: wrap;
@@ -618,6 +647,7 @@ footer a {
   footer.site-footer {
     padding: 0;
   }
+
   div.footer-container-top {
     display: flex;
     flex-wrap: wrap;
@@ -625,6 +655,7 @@ footer a {
     gap: 2vh;
     padding: 2vh 6vw 4vh 4vw;
   }
+
   div.footer-container-bottom {
     display: flex;
     flex-wrap: wrap;
@@ -678,5 +709,3 @@ a.backtotopactive {
 a.backtotopactive:hover {
   background-color: rgb(173, 113, 0);
 }
-
-
