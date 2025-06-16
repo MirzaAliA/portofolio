@@ -91,7 +91,7 @@ function Navbar() {
           <a href="#contact">Contact</a>
         </li>
         <li>
-          <a rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/11Wv-Onp-MHMoqf00y3kapEb8ihumEV9r/view?usp=drive_link">Resume</a>
+          <a rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/1FDrHZQT1WZxO5LvJme1-7RJtZdHx7vSE/view?usp=drive_link">Resume</a>
         </li>
       </ul>
     </nav>
@@ -289,7 +289,7 @@ function Footer() {
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#portofolio">Portofolio</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/11Wv-Onp-MHMoqf00y3kapEb8ihumEV9r/view?usp=drive_link">Resume</a></li>
+            <li><a rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/1FDrHZQT1WZxO5LvJme1-7RJtZdHx7vSE/view?drive_link">Resume</a></li>
           </ul>
         </div>
       </div>
