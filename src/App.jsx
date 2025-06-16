@@ -129,7 +129,7 @@ function AboutMe({ skills }) {
       <div className="about-me-main-container">
         <div className="about-me-left">
           <h2>Get To Know Me</h2>
-          <p>My Name is Mirza Ali Abhipraya, a fresh graduate of Computer Engineering from Diponegoro University with over three months of internship experience and extensive project involvement. A dedicated and diligent individual with hands-on experience in various projects.</p>
+          <p>My Name is Mirza Ali Abhipraya, a graduate of Computer Engineering from Diponegoro University with over three months of internship experience and extensive project involvement. A dedicated and diligent individual with hands-on experience in various projects.</p>
           <p> Proficient in both front-end and back-end web development using JavaScript. Highly passionate about technology, particularly in software development and product innovation.</p>
         </div>
         <div className="about-me-right">
@@ -289,7 +289,7 @@ function Footer() {
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#portofolio">Portofolio</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/1FDrHZQT1WZxO5LvJme1-7RJtZdHx7vSE/view?usp=drive_link">Resume</a></li>
+            <li><a rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/11Wv-Onp-MHMoqf00y3kapEb8ihumEV9r/view?usp=drive_link">Resume</a></li>
           </ul>
         </div>
       </div>
