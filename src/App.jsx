@@ -202,6 +202,15 @@ function Portofolio() {
             </a>
           </SwiperSlide>
           <SwiperSlide>
+            <a href="https://charity-animals.vercel.app/">
+              <div className="portofolio-grid-item">
+                <img className="image-portofolio" src="/CharityAnimals.png" alt="" />
+                <h2>Charity Animals</h2>
+                <p>Re-create "isa-charity.webflow.io" website.</p>
+              </div>
+            </a>
+          </SwiperSlide>
+          <SwiperSlide>
             <a href="https://portfolio-simple-e-commerce.vercel.app/">
               <div className="portofolio-grid-item">
                 <img className="image-portofolio" src="/ecommerce.png" alt="" />
@@ -211,20 +220,20 @@ function Portofolio() {
             </a>
           </SwiperSlide>
           <SwiperSlide>
-            <a href="https://github.com/MirzaAliA/cerpenku_id">
-              <div className="portofolio-grid-item">
-                <img className="image-portofolio" src="/cerpenku.png" alt="" />
-                <h2>Cerpenku.id</h2>
-                <p>Restful API Development for cerpen posts with following system</p>
-              </div>
-            </a>
-          </SwiperSlide>
-          <SwiperSlide>
             <a href="https://github.com/MirzaAliA/ews_tanah_longsor">
               <div className="portofolio-grid-item">
                 <img className="image-portofolio" src="/logo-fix.png" alt="" />
                 <h2>Lawas-TJ</h2>
                 <p>Web-based Early Warning System application for landslide in Tinjomoyo</p>
+              </div>
+            </a>
+          </SwiperSlide>
+          <SwiperSlide>
+            <a href="https://github.com/MirzaAliA/cerpenku_id">
+              <div className="portofolio-grid-item">
+                <img className="image-portofolio" src="/cerpenku.png" alt="" />
+                <h2>Cerpenku.id</h2>
+                <p>Restful API Development for cerpen posts with following system</p>
               </div>
             </a>
           </SwiperSlide>
@@ -280,7 +289,7 @@ function Footer() {
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#portofolio">Portofolio</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/11Wv-Onp-MHMoqf00y3kapEb8ihumEV9r/view?usp=drive_link">Resume</a></li>
+            <li><a rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/1FDrHZQT1WZxO5LvJme1-7RJtZdHx7vSE/view?usp=drive_link">Resume</a></li>
           </ul>
         </div>
       </div>
